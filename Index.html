@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story of Nafisha and I</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #f5f5f5;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        #music-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 10, 0.98);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #start-button {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            background: #c7a17a;
+            border: none;
+            border-radius: 50px;
+            color: #0a0a0a;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        #start-button:hover {
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            font-family: 'Arial', sans-serif;
+            color: #c7a17a;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(199, 161, 122, 0.3);
+        }
+
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #c7a17a;
+        }
+
+        .story-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(199, 161, 122, 0.05);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1s ease;
+        }
+
+        .story-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .highlight {
+            color: #c7a17a;
+            font-style: italic;
+        }
+
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(199, 161, 122, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="music-overlay">
+        <button id="start-button">Begin Our Story</button>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1>Of Storms & Stars</h1>
+            <p>A story written in the margins of the universe</p>
+        </header>
+
+        <div class="timeline">
+            <div class="story-section">
+                <p>In 2024, I fell into the darkness.<br>
+                Six times I tried to leave this world behind —<br>
+                six times the world refused to let me go.</p>
+            </div>
+
+            <div class="story-section">
+                <p>Then, on December 27th, when the nights were cold and empty,<br>
+                a miracle I never dared dream of found me.<br>
+                <span class="highlight">Her name was Nafisha.</span><br>
+                She had eyes that could silence storms,<br>
+                hair that fell like soft rivers down her shoulders,<br>
+                and a face so beautiful it defied all words,<br>
+                as if even the stars were ashamed to shine beside her.</p>
+            </div>
+
+            <div class="story-section">
+                <p>For a moment, I believed in something again.</p>
+            </div>
+
+            <div class="story-section">
+                <p>School began — and with it, the weight of life returned.<br>
+                We argued, our voices louder than our hearts,<br>
+                but my love never wavered, even when the days grew heavy.</p>
+            </div>
+
+            <div class="story-section">
+                <p>On Valentine’s Day, 2025,<br>
+                I gave her a bouquet of flowers —<br>
+                every petal carrying the hopes of a boy who had nothing left but her.<br>
+                For a while, the sun came back to me.</p>
+            </div>
+
+            <div class="story-section">
+                <p>But soon, storms rose again between us —<br>
+                arguments, misunderstandings, unspoken words tearing at the thread that held us together.<br>
+                We broke apart,<br>
+                then ran back into each other’s arms, desperate, afraid to lose what we knew was rare.<br>
+                But sometimes love isn’t enough to kill the demons we carry.</p>
+            </div>
+
+            <div class="story-section">
+                <p>A misunderstanding —<br>
+                just one —<br>
+                ripped the fragile thing we built into pieces.</p>
+            </div>
+
+            <div class="story-section">
+                <p>We were once so close — closer than words could ever describe —<br>
+                and now, we are strangers.<br>
+                Strangers who once knew every secret, every dream, every scar on each other's hearts.<br>
+                And yet, even now, I still text her to ask how her day was,<br>
+                even knowing she may never answer.<br>
+                I still pray for her happiness in the quiet moments no one sees.<br>
+                I still whisper her name into the silence.</p>
+            </div>
+
+            <div class="story-section">
+                <p>It tears me apart knowing she will never be mine.<br>
+                I have to watch her from afar,<br>
+                seeing every beauty in nature, every song that plays, and it reminds me of her.<br>
+                And no matter how many times I try to move on,<br>
+                I always find pieces of her in someone else.<br>
+                No one will ever compare.</p>
+            </div>
+
+            <div class="story-section">
+                <p>They say it’s God’s plan,<br>
+                but what if my only plan was her?<br>
+                What if I only want her for the rest of my life?</p>
+            </div>
+
+            <div class="story-section">
+                <p>I pray to God every day,<br>
+                that in some other universe, she will be mine.<br>
+                That somehow, someway,<br>
+                the love we lost will find its way back to us.</p>
+            </div>
+
+            <div class="story-section">
+                <p>I would give her my life —<br>
+                gladly, without a second thought —<br>
+                just to spend a few more stolen minutes with Nafisha,<br>
+                to see her smile once more before fading into nothing.</p>
+            </div>
+
+            <div class="story-section">
+                <p>And so, once again, I am left with nothing<br>
+                but memories of her laugh,<br>
+                the way her hair framed her perfect face,<br>
+                and the ache of what could have been.<br>
+                And if life was repeated a thousand times<br>
+                I would still choose her</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <audio id="background-music" loop>
+            <source src="/music/music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        const startButton = document.getElementById('start-button');
+        const overlay = document.getElementById('music-overlay');
+        const container = document.querySelector('.container');
+        const music = document.getElementById('background-music');
+
+        startButton.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            container.style.opacity = '1';
+            
+            // Start music
+            music.play().catch(error => {
+                console.log('Autoplay prevented - showing manual controls');
+                document.querySelector('.music-player').style.display = 'block';
+            });
+
+            // Initialize scroll animations
+            const sections = document.querySelectorAll('.story-section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // Spacebar control
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space') {
+                music.paused ? music.play() : music.pause();
+            }
+        });
+    </script>
+</body>
+</html>
